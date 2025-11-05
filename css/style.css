@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Fundo ===== */
+body {
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cinzel', serif;
+    /* estilo mágico */
+    color: #fff;
+}
+
+/* ===== Container principal ===== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* ===== Título ===== */
+h1 {
+    font-size: 70px;
+    color: #f5e6b3;
+    text-shadow: 3px 3px 10px #000;
+    margin-top: 40px;
+}
+
+/* ===== Painel de resultados ===== */
+.result {
+    border-radius: 15px;
+    background-color: rgba(233, 244, 246, 0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    width: 60%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #333;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* ===== Grid principal das cartas ===== */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Grid organizado e centralizado */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+/* ===== Cartas ===== */
+.grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffd700;
+    /* brilho dourado */
+}
+
+/* ===== Mensagem final ===== */
+#fim {
+    font-size: 28px;
+    color: #ffeb3b;
+    text-shadow: 2px 2px 8px #000;
+    margin-top: 20px;
+}
+
+#jogar-novamente {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#jogar-novamente:hover {
+    background-color: #8b3eff;
+    transform: scale(1.05);
+}
